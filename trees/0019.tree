@@ -1,0 +1,22 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Axiom}
+\title{The square #{\II \times \II} has a triangulation}
+\import{base-macros}
+\p{
+	The square below is a pushout square in #{\Cat}.
+}
+\p{
+	\tikzcd{
+% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXElJIl0sWzEsMCwiXFxEZWx0YV4yIl0sWzAsMSwiXFxEZWx0YV4yIl0sWzEsMSwiXFxJSSBcXHRpbWVzIFxcSUkiXSxbMCwxLCIwMiJdLFswLDIsIjAyIiwyXSxbMiwzLCIoMDAxLDAxMSkiLDJdLFszLDAsIiIsMSx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dLFsxLDMsIigwMTEsMDAxKSJdXQ==
+	\II & {\Delta^2} \\
+	{\Delta^2} & {\II \times \II}
+	\arrow["02", from=1-1, to=1-2]
+	\arrow["02"', from=1-1, to=2-1]
+	\arrow["{(011,001)}", from=1-2, to=2-2]
+	\arrow["{(001,011)}"', from=2-1, to=2-2]
+	\arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=2-2, to=1-1]
+	}
+}
+\p{In other words, a functor out of the walking square #{\II \times \II}
+	consists of two commutative triangles with common long edge.}

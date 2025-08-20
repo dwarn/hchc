@@ -1,0 +1,10 @@
+\author{dwarn}
+\date{2025-06-11}
+\taxon{Definition}
+\title{Objects of a category}
+\import{base-macros}
+\p{
+	For a category #{C : \Cat}, we denote by #{\ob(C)}
+	the type of functors #{\map(1,C)} from the
+	terminal category to #{C}.
+}

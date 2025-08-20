@@ -1,0 +1,16 @@
+\author{dwarn}
+\date{2025-07-14}
+\taxon{Remark}
+\title{Duality}
+\import{base-macros}
+\p{
+	Our development naturally supports \em{duality} in the sense that 
+	none of our axioms -- with one exception -- depend on a choice of enumeration 
+	#{\ob(\II) \simeq \{0,1\}} of the walking arrow.
+	More precisely, the axioms that seemingly do depend on a choice of enumeration
+	(namely [the axiom characterising functors into #{\II}](0012),
+	 [the Segal axiom](0014), and 
+	 [the colimit description of #{\II \times \II}](0019))
+	are all immediately equivalent to their dual statements
+	(obtained by choosing the other enumeration of #{\ob(\iI)}).
+}

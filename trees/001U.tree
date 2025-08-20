@@ -1,0 +1,27 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Remark}
+\title{Fully faithful functors correspond to full subcategories}
+\import{base-macros}
+\p{
+	Let #{A\,B : \Cat} be categories and let #{f : A \to B} be a
+	[fully faithful](001O) functor.
+	Then the action on objects #{\ob(f) : \ob(A) \to \ob(B)} has 
+	fibres that [are small propositions](001P).
+	So there is a corresponding [\em{full subcategory inclusion}](001T)
+	#{i : A' \to B}.
+	For any #{a : \ob(A)}, clearly #{f(a) : \ob(B)} lies in the image of
+	#{\ob(f)}, so #{f} factors through #{i} via a functor
+	#{e : A \to A'}.
+	This #{e} is easily seen to be [surjective and fully faithful
+	and so an equivalence](001N).
+	In this way every fully faithful functor into a fixed category #{B}
+	is uniquely determined by the corresponding subtype of #{\ob(B)}.
+}
+\p{
+	In particular, we have that for any category #{C : \Cat}, the map
+	given by postcomposition with #{f}
+##{\map(C,A) \to \map(C,B)}
+	is an embedding whose image consists precisely of those #{g : C \to B}
+	such that #{\ob(g)} factors through #{\ob(f)}.
+}

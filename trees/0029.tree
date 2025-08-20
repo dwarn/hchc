@@ -1,0 +1,32 @@
+\author{dwarn}
+\date{2025-07-14}
+\taxon{Definition}
+\title{Slice and coslice categories}
+\import{base-macros}
+\p{
+	Given a category #{C} with an object #{x : \ob(C)},	
+	the \em{slice category over #{x}} is the following [pullback](000Y) in
+	[\Cat](000Q).
+}
+\p{
+\tikzcd{
+% https://q.uiver.app/#q=WzAsNCxbMCwwLCJDL3giXSxbMSwwLCJcXGFyKEMpIl0sWzEsMSwiQyJdLFswLDEsIjEiXSxbMCwxXSxbMSwyLCJcXGNvZCJdLFszLDIsIngiLDJdLFswLDNdLFswLDIsIiIsMSx7InN0eWxlIjp7Im5hbWUiOiJjb3JuZXIifX1dXQ==
+	{C/x} & {\ar(C)} \\
+	1 & C
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=2-2]
+	\arrow["\cod", from=1-2, to=2-2]
+	\arrow["x"', from=2-1, to=2-2]
+}
+}
+\p{
+	We may also denote #{C / x} by #{C \downarrow x}. The dual construction,
+	where #{\cod} is replaced by #{\dom}, is denoted by #{x \downarrow C}
+	and is called the \em{coslice under #{x}}.
+}
+\p{
+	Note that an object of #{C / x} is given by an object #{y : C} together
+    with a morphism #{f : C(y,x)}.
+	One also has the expected characterisation of morphisms in #{C / x}.
+}

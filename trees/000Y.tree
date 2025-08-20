@@ -1,0 +1,28 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Axiom}
+\import{base-macros}
+\title{\Cat has pullbacks}
+\p{
+	We postulate that [\Cat](000Q) has pullbacks.
+}
+\p{
+	Explicitly, let #{A\,B\,C : \Cat} be categories and
+	let #{f : B \to A}, #{g : C \to A} be functors.
+	Given a fourth category #{X : \Cat} we can consider
+	the type #{\map(X,B) \times_{\map(X,A)} \map(X,C)} of
+	'cones from #{X} to #{B \xrightarrow{f} A \xleftarrow{g} C}'.
+	We can compose a cone from #{X} to 
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	with a functor #{Y \to X}, to get a
+	cone from #{Y} to 
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	(this uses associativity of functor composition).
+
+	The postulate is that we have a category #{B \times_A C} with
+	a cone from #{B \times_A C} to 
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	such that for every category #{X : \Cat},
+	composition induces an equivalence
+##{\map(X, B \times_A C) \simeq \map(X,B) \times_{\map(X,A)} \map(X,C).}
+}

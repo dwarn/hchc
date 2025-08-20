@@ -1,0 +1,21 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\import{base-macros}
+\title{Natural transformations induce naturality squares}
+\p{
+	Given categories #{A\, B : \Cat}, functors
+	#{F, G : A \to B}, a natural transformation
+	#{\eta : F \to G}, objects #{x\, y : \ob(A)} and
+    a morphism #{f : A(x,y)}, we have that
+	#{\eta_b \circ F(f) = G(f) \circ \eta_b}.
+}
+\p{
+	Indeed this is witnessed by the composite functor
+##{\II \times \II 
+	\xrightarrow{(\eta \circ \pi_1, f \circ \pi_2)} 
+	\Fun(A,B) \times A
+	\xrightarrow{\ev} B
+	.
+}
+}

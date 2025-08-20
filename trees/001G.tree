@@ -1,0 +1,28 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\title{Associators, pentagonators, and so on}
+\import{base-macros}
+\p{
+	For any category #{C : \Cat}, [composition](001D) of morphisms in
+	#{C} is associative (up to homotopy) and indeed
+	has a whole (external) infinite tower of coherences.
+}
+\p{
+	We explain only the construction of associators; the rest follows the
+    same pattern.
+	Given objects #{a\,b\,c\,d : \ob(C)} and morphisms
+	#{f : C(a,b)}, #{g : C(b,c)}, #{h : C(c,d)}, we would like
+	to construct an identification
+	#{h \circ (g \circ f) = (h \circ g) \circ f}.
+	Since #{\Delta^3} is the [colimit of its spine](001A),
+	the morphisms #{(f,g,h)} induce a functor
+	#{F : \Delta^3 \to C}.
+	Since we have a [good understanding](0017) of 
+	functors #{\Delta^2 \to \Delta^3}, we see that the restrictions
+	of #{F} along #{02 : \II \to \Delta^3}
+	and #{13 : \II \to \Delta^2} are
+	#{g \circ f} and #{h \circ g}, respectively.
+	Hence the restriction of #{F} along #{03 : \II \to \Delta^3}
+	equals both the desired ternary composites.
+}

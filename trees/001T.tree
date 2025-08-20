@@ -1,0 +1,20 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Axiom}
+\import{base-macros}
+\title{Full subcategories exist}
+\p{ For any category #{C : \Cat} with a type family
+    #{P : \ob(C) \to \UU} valued in small propositions,
+	we postulate the existence of a category
+	#{D : \Cat} with a functor #{i : D \to C} such that for all
+	categories #{X : \Cat}, postcomposition with #{i} induces
+	an embedding
+##{\map(X,D) \to \map(X,C)}
+	whose image consists of precisely those functors #{f : X \to C}
+	such that for all #{x : \ob(X)}, #{P(x)} holds.
+}
+\p{
+	It follows from the above that #{i} is [fully faithful](001O)
+	and that the image of #{\ob(i) : \ob(D) \to \ob(C)} is exactly
+	the [subtype](001P) determined by #{P}.
+}

@@ -1,0 +1,13 @@
+\author{dwarn}
+\date{2025-06-11}
+\taxon{Axiom}
+\import{base-macros}
+\title{Univalence of \Cat}
+\p{
+	We postulate that [\Cat](000Q) is a \em{univalent category}.
+}
+\p{
+	That is, we postulate that for any category #{C : \Cat}, the subtype
+	of #{(D : \Cat) \times \map(C,D)} consisting of
+	\em{invertible} functors, is contractible.
+}

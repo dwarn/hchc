@@ -1,0 +1,16 @@
+\author{dwarn}
+\date{2025-06-15}
+\taxon{Lemma}
+\title{The gap map in a composite square}
+\import{base-macros}
+\p{
+	\tikzcd{
+		% https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzEsMCwiQiJdLFsxLDEsIkQiXSxbMCwxLCJDIl0sWzAsMV0sWzEsMl0sWzAsM10sWzMsMl1d
+	A & B \\
+	C & D
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+	}
+}

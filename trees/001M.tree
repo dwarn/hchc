@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Axiom}
+\import{base-macros}
+\title{\II detects equivalences}
+\p{
+	We postulate that for categories #{A\, B : \Cat} and a
+	functor #{f : A \to B}, if the map of types
+	##{\map(\II,A) \to \map(\II,B)}
+	given by postcomposition with #{f} is invertible, then
+	so is the functor #{f}.
+}

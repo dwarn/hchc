@@ -1,0 +1,26 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Remark}
+\import{base-macros}
+\title{A functor is invertible if it is fully faithful and surjective on objects}
+\p{
+	The axiom that [\II detects equivalence](001M)
+	has the following equivalent reformulation.
+	Let #{A\, B : \Cat} be categories and #{f : A \to B} a functor.
+	First note that since #{1 : \Cat} is a retract of #{\II}
+	and [equivalences are closed under retracts](0018), if
+	#{\map(A,\II) \to \map(B,\II)} is invertible, then
+	so is #{\ob(f) : \ob(A) \to \ob(B)}.
+	Assuming that #{\ob(f)} is invertible, we have that
+	#{\map(A,\II) \to \map(B,\II)} is invertible iff it is fibrewise invertible
+	over #{\ob(A)^2}. I.e. iff for every #{a_0\,a_1 : \ob(A)} the
+	action on morphisms
+	##{A(a_0,a_1) \to B(f(a_0),f(a_1))}
+	is invertible, i.e. iff #{f} is fully faithful.
+	Conversely, if #{f} is fully faithful, then #{\ob(f)} 
+	[is an embedding](001P), so it is an equivalence iff it is surjective.
+}
+\p{
+	Thus we have that #{f} is invertible if it is fully faithful and
+	surjective on objects.
+}

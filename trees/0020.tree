@@ -1,0 +1,22 @@
+\author{dwarn}
+\date{2025-06-14}
+\taxon{Definition}
+\import{base-macros}
+\title{Orthogonality}
+\p{
+	Given morphisms #{f : A \to B}, #{g : X \to Y}
+	in some (wild) category, we say that #{f} and #{g} are orthogonal,
+	written #{f \perp g}, if the following square is a pullback square of types.
+}
+\p{
+\tikzcd{
+	% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hcChCLFgpIl0sWzEsMCwiXFxtYXAoQixZKSJdLFswLDEsIlxcbWFwKEEsWCkiXSxbMSwxLCJcXG1hcChBLFkpIl0sWzAsMV0sWzAsMl0sWzIsM10sWzEsM10sWzAsMywiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV1d
+	{\map(B,X)} & {\map(B,Y)} \\
+	{\map(A,X)} & {\map(A,Y)}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=2-2]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+}
+}

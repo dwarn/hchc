@@ -1,0 +1,14 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Remark}
+\import{base-macros}
+\title{There is only one terminal category}
+\p{
+	Note that since [\Cat is univalent](000S),
+	the existence of a [terminal category](000T) 
+	is naturally a proposition.
+}
+\p{
+	The same holds for other axioms about existence of categories
+    with specified universal properties.
+}

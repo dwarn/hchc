@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-13}
+\import{base-macros}
+\taxon{Definition}
+\title{Natural transformations}
+\p{
+	Given categories #{A\, B : \Cat} and two 
+    functors #{f, g : A \to B}, we say that a
+	\em{natural transformation} from #{f} to #{g} consists
+	of a morphism in the functor category #{\Fun(A,B)}
+	from (the object corresponding to) #{f} to #{g}.
+}

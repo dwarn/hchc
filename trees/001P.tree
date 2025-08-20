@@ -1,0 +1,21 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Lemma}
+\import{base-macros}
+\title{A fully faithful functor induces an embedding on objects}
+\p{
+	Let #{A\,B : \Cat} be categories and let
+	#{f : A \to B} be a [fully faithful](001O) functor.
+	Then #{\ob(f) : \ob(A) \to \ob(B)} is an embedding.
+}
+\proof{
+	For objects #{a_0\,a_1 : A} we have to show that
+	the action of #{\ob(f)} on paths defines an equivalence
+	##{(a_0 = a_1) \xrightarrow{} (f(a_0) = f(a_1)).}
+	By [univalence](001Q), this is equivalent to
+	the action of #{f} on isomorphisms:
+	##{(a_0 \cong a_1) \xrightarrow{} (f(a_0) \cong f(a_1)).}
+	The above is a map of subtypes of #{B(f(a_0),f(a_1))}, so 
+	it is at least an embedding.
+	It is an equivalence since #{f} [is conservative](001S).
+}

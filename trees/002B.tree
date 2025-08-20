@@ -1,0 +1,16 @@
+\author{dwarn}
+\date{2025-07-14}
+\import{base-macros}
+\taxon{Remark}
+\title{Morphisms in arrow categories}
+\p{
+	Let #{C : \Cat}. Let #{a,b,c,d : \ob(C)} be objects and let
+	#{f : C(a,b)}, #{g : C(c,d)} be morphisms.
+	We can the view #{f} and #{g} as objects of #{\ar(C)}.
+	By the [colimit description of](0019) #{\II \times \II},
+	the type of morphisms #{\ar(C)(f,g)} from #{f} to #{g}
+	is equivalent to the following sigma-type.
+	##{(h : C(a,c)) \times (k : C(b,d)) \times (g \circ h = k \circ f).}
+	In other words, a morphism of arrows is a commutative square.
+}
+

@@ -1,0 +1,11 @@
+\author{dwarn}
+\date{2025-07-14}
+\taxon{Notation}
+\title{Arrow categories}
+\import{base-macros}
+\p{
+	Given a [category](000Y) #{C : \Cat},
+	the [functor category](0011) #{\Fun(\II,C)} 
+	[out of the walking arrow](000U) is sometimes
+	denoted by #{\ar(C)}.
+}

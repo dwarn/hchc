@@ -1,0 +1,8 @@
+\author{dwarn}
+\date{2025-06-15}
+\taxon{Lemma}
+\title{Maps with a left lifting property are closed under cobase change}
+\p{
+	Let #{r : U \to V} be a morphism in some (wild) category.
+	Then the class of maps left orthogonal to #{r} is closed under cobase change.	
+}

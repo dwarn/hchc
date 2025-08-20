@@ -1,0 +1,20 @@
+\author{dwarn}
+\date{2025-07-14}
+\taxon{Remark}
+\title{Externalising categories}
+\p{
+	[Categories](000Q) have mapping spaces that are arbitrarily
+	[coherent](001L) and satisfy [univalence](001Q),
+	and functors between categories respect composition and so on.
+	This means that the usual things one can do with wild categories
+	and wild functors also apply to categories.
+	For example we can talk about initial and terminal objects
+	of categories, or pullback and pushout squares, and pastings
+	thereof, or lifting properties.
+}
+\p{
+	An important caveat here is that constructions in wild category theory do
+	not a priori produce actual categories or functors (although they can
+	produce objects and morphisms of given categories).
+}
+

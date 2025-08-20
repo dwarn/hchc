@@ -1,0 +1,25 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Axiom}
+\import{base-macros}
+\title{\Cat has exponential objects}
+\p{
+	We postulate that \Cat has exponential objects.
+}
+\p{
+	Explicitly, let #{A\, B : \Cat} be two categories.
+	For any category #{X : \Cat} we can consider the
+	type #{\map(X \times A, B)} of maps out of the [product #{X \times A}](0010).
+	Given a functor #{f : Y \to X}, we have an evident functor
+	#{f \times A : Y \times A \to X \times A}
+	and so a map
+	#{\map(X \times A, B) \to \map(Y \times A, B)}
+	given by composition with #{f \times A}.
+	The postulate is that we have a category #{\Fun(A,B)}
+	together with a functor
+	#{\ev_{A,B} : \Fun(A,B) \times A \to B} which for all #{X : \Cat} induces an equivalence
+	##{\map(X, \Fun(A,B)) \to \map(X \times A, B).}
+}
+\p{
+	We may also sometimes write #{B^A} instead of #{\Fun(A,B)}.
+}

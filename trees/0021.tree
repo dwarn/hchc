@@ -1,0 +1,64 @@
+\author{dwarn}
+\date{2025-06-14}
+\taxon{Lemma}
+\import{base-macros}
+\title{A left fibration induces a pullback square of arrow categories}
+\p{
+	Let #{p : E \to B} be a [left fibration](001Y).
+	Then the following square is a pullback
+	square in #{\Cat}.
+}
+\p{
+\tikzcd{
+% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXEZ1bihcXElJLEUpIl0sWzEsMCwiXFxGdW4oXFxJSSxCKSJdLFswLDEsIkUiXSxbMSwxLCJCIl0sWzAsMV0sWzAsMiwiXFxjb2QiLDJdLFsyLDMsInAiLDJdLFsxLDMsIlxcY29kIl0sWzAsMywiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV1d
+	{\Fun(\II,E)} & {\Fun(\II,B)} \\
+	E & B
+	\arrow[from=1-1, to=1-2]
+	\arrow["\cod"', from=1-1, to=2-1]
+	\arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=2-2]
+	\arrow["\cod", from=1-2, to=2-2]
+	\arrow["p"', from=2-1, to=2-2]
+	}
+}
+\proof{
+	Since #{\II} [detects equivalences](001M), it suffices to show that a certain
+	square
+	
+	\p{
+		\tikzcd{
+% https://q.uiver.app/#q=WzAsNCxbMCwwLCJcXG1hcChcXElJXFx0aW1lc1xcSUksRSkiXSxbMSwwLCJcXG1hcChcXElJIFxcdGltZXNcXElJLEIpIl0sWzAsMSwiXFxtYXAoXFxJSSxFKSJdLFsxLDEsIlxcbWFwKFxcSUksQikiXSxbMCwxXSxbMCwyXSxbMiwzXSxbMSwzXV0=
+	{\map(\II\times\II,E)} & {\map(\II \times\II,B)} \\
+	{\map(\II,E)} & {\map(\II,B)}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+		}
+	}
+	is a pullback square.
+	This means showing that #{\{0\} \times \II \to \II \times \II} is left
+	orthogonal to #{p : E \to B}, i.e. that it is left cofinal.
+	We use the [colimit decomposition of #{\II \times \II}](0019)
+	and the [condition for orthogonality of an induced map on pushouts](001Z).
+	Namely, we have that #{\{0\} \times \II \to \II \times \II}
+	is induced by the following map of spans.
+	\p{
+		\tikzcd{
+% https://q.uiver.app/#q=WzAsNixbMSwwLCJcXHswXFx9Il0sWzAsMCwiXFxJSSJdLFsyLDAsIlxcezBcXH0iXSxbMiwxLCJcXERlbHRhXjIiXSxbMSwxLCJcXElJIl0sWzAsMSwiXFxEZWx0YV4yIl0sWzAsMl0sWzIsMywiMCIsMl0sWzAsNCwiMCIsMl0sWzQsMywiMDIiLDJdLFs0LDUsIjAyIl0sWzEsNSwiMDEiLDJdLFswLDEsIjAiLDJdXQ==
+	\II & {\{0\}} & {\{0\}} \\
+	{\Delta^2} & \II & {\Delta^2}
+	\arrow["01"', from=1-1, to=2-1]
+	\arrow["0"', from=1-2, to=1-1]
+	\arrow[from=1-2, to=1-3]
+	\arrow["0"', from=1-2, to=2-2]
+	\arrow["0"', from=1-3, to=2-3]
+	\arrow["02", from=2-2, to=2-1]
+	\arrow["02"', from=2-2, to=2-3]
+		}
+	}
+	The component map #{\{0\} \to \II} is left cofinal by definition,
+	and we have a factorisation #{\{0\} \to \II \xrightarrow{01} \Delta^2} which shows
+    that the [composite is left cofinal if the last map is](0023).
+	Finally we [use](0026) that #{01 : \II \to \Delta} [is a pushout of](0014)
+	#{0 : 1 \to \II} which is left cofinal.
+}

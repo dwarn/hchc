@@ -1,0 +1,30 @@
+\author{dwarn}
+\date{2025-07-14}
+\taxon{Axiom}
+\import{base-macros}
+\title{\Cat has pushouts}
+\p{
+	We postulate that \Cat has pushouts.
+}
+\p{
+	Explicitly, let #{A\,B\,C : \Cat} be categories and
+	let #{f : A \to B}, #{g : A \to C} be functors.
+	Given a fourth category #{X : \Cat} we can consider
+	the type #{\map(B,X) \times_{\map(A,X)} \map(C,X)} of
+	'cocones from #{B \xrightarrow{f} A \xleftarrow{g} C} to #{X}'.
+	We can compose a cone from 
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	to #{X} 
+	with a functor #{X \to Y}, to get a
+	cone from
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	to #{Y}.
+
+	The postulate is that we have a category #{B \sqcup^A C} with
+	a cone from 
+	#{B \xrightarrow{f} A \xleftarrow{g} C}
+	to #{B \sqcup^A C}
+	such that for every category #{X : \Cat},
+	composition induces an equivalence
+##{\map(B \sqcup^A C, X) \simeq \map(B,X) \times_{\map(A,X)} \map(C,X).}
+}

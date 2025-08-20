@@ -1,0 +1,25 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Definition}
+\import{base-macros}
+\title{Morphisms in a category}
+\p{
+	Given a category #{C}, functors #{f : \II \to C} are called
+	\em{morphisms} (in #{C}).
+}
+\p{
+	Given a morphism #{f : \II \to C}, the object of #{C}
+	given by the composite functor
+	#{1 \xrightarrow{0} \II \xrightarrow{f} C} is called
+	the \em{domain} of #{f}, written #{\dom(f) : \ob(C)}.
+	The composition #{1 \xrightarrow{1} \II \xrightarrow{f} C}
+	is called the \em{codomain} of #{f}, written
+	#{\cod(f) : \ob(C)}.
+}
+\p{
+	Given objects #{x\, y : \ob(C)}, the type
+	#{(f : \map(\II,C)) \times (\dom(f) = x) \times (\cod(f) = y)}
+	of morphisms with domain #{x} and codomain #{y}
+    is called a \em{mapping space} (from #{x} to #{y} in #{C})
+	and is denoted #{C(x,y)}.
+}

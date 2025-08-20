@@ -1,0 +1,55 @@
+\author{dwarn}
+\date{2025-06-13}
+\import{base-macros}
+\taxon{Lemma}
+\title{#{\Delta^n} is the colimit of its spine}
+\p{
+	For every #{n : \N}, the category #{\Delta^n} is
+	\em{freely generated} by the family of objects
+	#{[n+1] \to \ob(\Delta^n)} together with the morphisms
+	#{(i : [n]) \to \Delta^n(i,i+1)}.
+}
+\p{
+	Explicitly, this means that for any category #{C : \Cat},
+	the evident map
+	##{\map(\Delta^n, C) \to
+	\left(
+		(a : [n+1] \to \ob(C))
+		\times
+		\forall (i : [n]) \to C(a_i, a_{i+1})
+	\right)}
+	is an equivalence.
+}
+\p{In other words, #{\Delta^n} is the colimit of a diagram of the form
+#{\II \xleftarrow{1} 1 \xrightarrow{0} \II \xleftarrow{1} 1 \xrightarrow{0} \II \cdots}.
+}
+\proof{
+	We induct on #{n : \N}. 
+	For #{n = 0} there is nothing to explain.
+Thus suppose for some #{n : \N}, the category #{\Delta^n} is
+the colimit of its spine in the sense of the lemma.
+Since #{- \times \II : \Cat \to \Cat} [preserves colimits](001B),
+we get an analogous colimit description of #{\Delta^n \times \II},
+exhibiting it as the colimit of a diagram of the form
+#{\II \times \II \leftarrow \II \to 
+\II \times \II \leftarrow \II \to \cdots}.
+We also know that #{\Delta^n \times \II} is the [coreflection](0017) of the
+poset #{[n+1] \times \{0,1\}} in \Cat.
+Fix an arbitrary retraction of this poset #{[n+1] \times \{0,1\}} onto the
+linear poset #{[n+2]}.
+In this way we see that #{\Delta^{n+1}} is a retract of #{\Delta^n \times \II}.
+In particular, for any category #{C : \Cat} this exhibits
+#{\map(\Delta^{n+1}, C)} as a retract of
+#{\map(\Delta^n \times \II, C)}.
+The colimit description of #{\Delta^n \times \II} explained above
+together with the colimit descriptions of [#{\II \times \II}](0019)
+and [#{\Delta^2}](0014) give a description of
+the latter mapping space,
+#{\map(\Delta^n \times \II, C)}.
+From this, and the chosen way of retracting #{[n+1] \times \{0,1\}}
+	onto #{[n+2]}, we see that
+##{(a : [n+1] \to \ob(C)) \times \forall (i : [n]) \to C(a_i, a_{i+1}) }	
+is a retract of #{\map(\Delta^n \times \II, C)}.
+The evident map from #{\map(\Delta^{n+1},C)} to the type above is a morphism
+of retracts of #{\map(\Delta^n \times \II,C)}, and so is [invertible](0018).
+}

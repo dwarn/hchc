@@ -1,0 +1,35 @@
+\author{dwarn}
+\date{2025-06-12}
+\import{base-macros}
+\taxon{Construction}
+\title{Functors into #{\Delta^n}}
+\p{For every #{n : \N}, we have an enumeration
+	##{\ob(\Delta^n) \simeq [n+1]}
+	and in this way, for all #{C : \Cat}, we have
+	that the map
+	##{\map(C,\Delta^n) \to [n+1]^{\ob(C)}}
+	given by [acting on objects](0012)
+	is an embedding whose image consists of those
+	functions #{p : \ob(C) \to [n+1]} such that for all
+	morphisms #{f : \II \to C} in #{C}, we have
+	#{p(\dom(f)) \le p(\cod(f))} in #{[n+1]}.
+}
+\p{
+	In other words, #{\Delta^n} is the cofree category on the poset
+	#{[n+1]}.
+}
+\proof{
+\p{
+	By induction on #{n : \N}. For #{n = 0} there is nothing to explain.
+	Thus assume the statement holds for some #{n : \N}.
+	We have #{\ob(\Delta^{n+1}) \simeq \map(\Delta^n,\II)}
+	which is equivalently the type of [monotone maps](0012)
+    from #{\ob(\Delta^n) \simeq [n+1]} into #{\{0,1\}}.
+	This is indeed easily seen to be #{[n+1]}.
+}
+\p{
+	Now we have #{\map(C,\Delta^{n+1}) \simeq \map(C \times \Delta^n, \II)}
+	which corresponds to monotone maps from #{\ob(C) \times [n+1]} into #{\{0,1\}}.
+	From here it is easy to get to the desired result.
+}
+}

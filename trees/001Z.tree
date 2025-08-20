@@ -1,0 +1,36 @@
+\author{dwarn}
+\date{2025-06-14}
+\import{base-macros}
+\taxon{Lemma}
+\title{Orthogonality of an induced map on pushouts}
+\p{
+	Let #{r : U \to V} be some morphism in a wild category,
+	and consider a map of spans as follows.
+}
+\p{
+	\tikzcd{
+	X & Y & Z \\
+	{X'} & {Y'} & {Z'}
+	\arrow["f"', from=1-1, to=2-1]
+	\arrow[from=1-2, to=1-1]
+	\arrow[from=1-2, to=1-3]
+	\arrow["g"', from=1-2, to=2-2]
+	\arrow["h"', from=1-3, to=2-3]
+	\arrow[from=2-2, to=2-1]
+	\arrow[from=2-2, to=2-3]
+	}
+}
+\p{
+	Suppose that both spans have pushouts,
+	#{X \sqcup^Y Z} and #{X' \sqcup^{Y'} Z'}.
+	Assuming that #{f, g, h} are all [left orthogonal](0020)
+    against #{r}, then so is the induced map on pushouts
+	#{X \sqcup^Y Z \to X' \sqcup^{Y'} Z'}.
+}
+\proof{
+	This amounts to an interchange of pullbacks and pullbacks.
+	We are tasked with proving that a certain square is a pullback square,
+	where the square is induced by applying pullbacks objectwise to a square of 
+	cospans. This square of cospans is objectwise a pullback and
+	Fubini gives the desired result.
+}

@@ -1,0 +1,11 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\import{base-macros}
+\title{Identity morphisms}
+\p{
+	Given a category #{C : \Cat}
+	and an object #{c : \ob(C)}, we obtain a morphism
+	#{\id_c : C(c,c)} given by the composite functor
+	#{\II \xrightarrow{!} 1 \xrightarrow{c} C}.
+}

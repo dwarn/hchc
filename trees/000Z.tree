@@ -1,0 +1,17 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Remark}
+\import{base-macros}
+\title{\Cat has finite products}
+\p{
+	From the facts that #{\Cat} has a [terminal object](000T)
+    and [pullbacks](000Y), it is easy to show that
+	#{\Cat} has binary products, and more generally arbitrary
+	finite products.
+}
+\p{
+	Explicitly, for any finite set #{I}
+	(meaning, we have #{n : \mathbb N} and
+#{\lVert I \simeq [n] \rVert})
+	and #{A : I \to \Cat}, the product #{\Pi_I A} exists.
+}

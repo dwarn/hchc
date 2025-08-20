@@ -1,0 +1,22 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Remark}
+\title{On coherences}
+\p{
+	We have seen how to use our axioms to construct various laws
+	relating composition of morphisms in categories, functors between categories,
+    natural transformations between functors, and so on.
+	There are many more similar laws 
+	(functors respect associators, naturality squares respect composition of
+	 morphisms and of functors, etc etc) which hold and are important to our development,
+	but we will generally not spell out their constructions,
+	with the hope that the reader has seen enough examples to understand the
+    general strategy for obtaining such laws.
+	It is worth noting that none of these laws are \em{postulated}: their witnesses
+	are all \em{constructed} explicitly. The transparency of these constructions
+	is important since it allows to extend the tower of coherences upward.
+}
+\p{
+	The situation can be compared with that of 
+	coherences involving e.g. path composition and actions on paths in HoTT.
+}

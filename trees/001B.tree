@@ -1,0 +1,10 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Remark}
+\import{base-macros}
+\title{#{- \times C : \Cat \to \Cat} preserves colimits}
+\p{
+	For #{C : \Cat}, the (wild) functor #{- \times C : \Cat \to \Cat}
+	[is a left adjoint](0011), and so preserves the kinds of colimits
+	one can talk about in wild categories, e.g. pushouts.
+}

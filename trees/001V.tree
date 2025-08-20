@@ -1,0 +1,24 @@
+\author{dwarn}
+\date{2025-06-14}
+\import{base-macros}
+\taxon{Lemma}
+\title{Embeddings of functor categories}
+\p{
+	Let #{A\,B : \Cat} be categories and let #{f : A \to B} be a [fully faithful](001O) functor.
+	Then for any category #{C : \Cat}, the functor
+	#{\Fun(C,A) \to \Fun(C,B),}
+	given by postcomposition with #{f}, is also fully faithful,
+	and its image consists precisely of those #{g : \map(C,B)} such that
+	#{\ob(g)} factors through #{\ob(f)}.	
+}
+\proof{
+	The claim that the action on objects
+	#{\map(C,A) \to \map(C,B)} is an embedding with image as specified 
+	follows from the fact that [A has the universal property of a full subcategory](001U).
+	It remains to verify that the
+#{\Fun(C,A) \to \Fun(C,B)} is fully faithful.
+	By [currying](0011), arrows #{\II \to \Fun(C,A)} correspond to
+	functors #{\II \times C \to A}.
+	Again by the universal property of #{A}, these form a subtype of
+	functors #{\II \times C \to B}. As needed
+}

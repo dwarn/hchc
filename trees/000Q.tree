@@ -1,0 +1,19 @@
+\author{dwarn}
+\date{2025-06-11}
+\import{base-macros}
+\taxon{Axiom}
+\title{The wild category of categories}
+\p{
+	We postulate a locally small \em{#{\infty}-category object}
+	(in the external category of types),
+	i.e. an infinitely coherent wild category, \Cat.
+}
+\p{
+	Objects of \Cat are called \em{categories} and
+	morphisms in \Cat are called \em{functors}.
+}
+\p{
+	For #{C, D : \Cat}, we denote the type of
+	functors from #{C} to #{D} by
+	#{\map(C,D)}.
+}

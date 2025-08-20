@@ -1,0 +1,27 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\import{base-macros}
+\title{Composition of morphisms}
+\p{
+	Given a category #{C : \Cat} with objects
+	#{a\,b\, c : \Cat} and morphisms
+	#{f : C(a,b)}, #{g : C(b,c)}, #{h : C(a,c)},
+	say a \em{witness of commutativity} of the triangle
+	#{(f,g,h)} consists of a functor
+	#{\Delta^2 \to \Cat} whose action on objects is given
+	by #{a,b,c}, and whose [action on the morphisms](001E)
+	#{01,12,02} is given by #{f, g, h}.
+}
+\p{
+	We can thus interpret the [Segal axiom](0014) as saying
+    that for any such morphisms #{f, g}, the type of
+	morphisms #{h} together with a witness of commutativity
+	of #{(f,g,h)} is contractible.
+	Let us denote by #{g \circ f} the unique morphism
+	#{g \circ f : C(a,c)} with a witness of commutativity
+	of #{(f,g,g \circ f)}.
+	Then by the fundamental theorem of identity types,
+	a witness of commutativity of #{(f,g,h)} is equivalently an
+	identification #{h = g \circ f}.
+}

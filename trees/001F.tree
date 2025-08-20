@@ -1,0 +1,16 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\title{Unit laws}
+\import{base-macros}
+\p{
+	[Identity morphisms](001C) act as \em{two-sided units} for 
+	[composition](001D).
+	That is, for any category #{C : \Cat} with objects #{a\, b : C} and
+	a morphism #{f : C(a,b)}, we have
+	that #{\id_b \circ f = f} and #{f \circ \id_a = f}.
+	Indeed this is witnessed by the composite functors
+	##{\Delta^2 \xrightarrow{011} \II \xrightarrow{f} C}
+	and
+	##{\Delta^2 \xrightarrow{001} \II \xrightarrow{f} C.}
+}

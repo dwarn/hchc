@@ -1,0 +1,13 @@
+\author{dwarn}
+\date{2025-06-11}
+\taxon{Axiom}
+\title{The walking arrow}
+\import{base-macros}
+\p{
+	We postulate a category
+	#{\II : \Cat} together with a bijection
+	#{\ob(\II) \simeq \{0,1\}} between the type of 
+	[objects](000V)
+	of #{\II} and the standard two-element type
+	#{\{0,1\}}.
+}

@@ -1,0 +1,24 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Definition}
+\import{base-macros}
+\title{Invertible morphisms}
+\p{
+	Given a category #{C : \Cat}, objects #{a\, b : \ob(C)}
+	and a morphism #{f : C(a,b)}, we say that
+	#{f} is \em{invertible} if any of the following equivalent conditions hold:
+\ol{
+\li{#{f} has a left inverse and a right inverse, i.e.
+#{g\, h : C(b,a)} with witnesses that #{g \circ f = \id_a} and
+#{f \circ h = \id_b}
+}
+\li{
+	For all #{x : \ob(C)}, precomposition with #{f} defines an equivalence of types
+	##{C(b,x) \xrightarrow{\sim} C(a,x)}
+}
+\li{
+	For all #{x : \ob(C)}, postcomposition with #{f} defines an equivalence of types
+	##{C(x,a) \xrightarrow{\sim} C(x,b)}
+}
+}
+}

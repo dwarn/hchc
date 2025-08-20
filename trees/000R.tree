@@ -1,0 +1,26 @@
+\author{dwarn}
+\date{2025-06-11}
+\taxon{Remark}
+\import{base-macros}
+\title{On the coherences of \Cat}
+\p{
+	The [infinite tower of coherences of \Cat](000Q) should be understood as an
+	\em{axiom schema}. In type theory we cannot state all the axioms 
+	'at once'.
+	We will later see ways to \em{internally} get at such infinite tower
+	of coherences, but this does not mean that we can get around
+	postulating such an axiom schema in the beginning,
+	since without it (the \em{full} schema) we see no way of going from the \em{internal} to the
+	\em{external}.
+}
+\p{
+	The expectation is that any concrete argument only invokes a finite number of
+	coherences of \Cat. This can be compared with the 
+	\em{length of contexts in type theory}:
+	the rules of type theory permit contexts of arbitrary size, while
+	any concrete argument only ever uses contexts of some bounded size.
+	This does \em{not} prevent type theory from dealing with infinite objects,
+	such as infinite lists; in the same way we are not prevented from dealing
+	with infinite towers of coherences internal to our development of
+	higher category theory.
+}

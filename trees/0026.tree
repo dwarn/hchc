@@ -1,0 +1,52 @@
+\author{dwarn}
+\date{2025-07-11}
+\taxon{Lemma}
+\import{base-macros}
+\title{Maps with left lifting closed under cobase change}
+\p{
+	Let #{r : U \to V} be a fixed morphism in some wild category.
+	Suppose given a pushout square.
+}
+\p{
+	\tikzcd{
+	% https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzAsMSwiQyJdLFsxLDEsIkQiXSxbMSwwLCJCIl0sWzAsMV0sWzEsMiwiZyJdLFswLDMsImYiXSxbMywyXV0=
+	A & B \\
+	C & D
+	\arrow["f", from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow["g", from=2-1, to=2-2]
+	}
+}
+\p{
+	If #{f} is left orthogonal to #{r}, then so is #{g}.
+}
+\proof{
+	By pullback pasting and cancellation.
+	The top, bottom, and right faces in the cube
+	below are cartesian, so the left face is too.
+}
+\p{\tikzcd{
+% https://q.uiver.app/#q=WzAsOCxbMCwwLCJVXkQiXSxbMCwzLCJVXkMiXSxbMywwLCJVXkIiXSxbMywzLCJVXkEiXSxbMiwxLCJWXkQiXSxbNSwxLCJWXkIiXSxbNSw0LCJWXkEiXSxbMiw0LCJWXkMiXSxbMSw3XSxbMSwzXSxbNCw3XSxbMCwxXSxbMCwyXSxbMCw0XSxbNyw2XSxbMyw2XSxbMiw1XSxbNCw1XSxbMiwzXSxbNSw2XV0=
+	{U^D} &&& {U^B} \\
+	&& {V^D} &&& {V^B} \\
+	\\
+	{U^C} &&& {U^A} \\
+	&& {V^C} &&& {V^A}
+	\arrow[from=1-1, to=1-4]
+	\arrow[from=1-1, to=2-3]
+	\arrow[from=1-1, to=4-1]
+	\arrow[from=1-4, to=2-6]
+	\arrow[from=1-4, to=4-4]
+	\arrow[from=2-3, to=2-6]
+	\arrow[from=2-3, to=5-3]
+	\arrow[from=2-6, to=5-6]
+	\arrow[from=4-1, to=4-4]
+	\arrow[from=4-1, to=5-3]
+	\arrow[from=4-4, to=5-6]
+	\arrow[from=5-3, to=5-6]
+}
+}
+\p{
+	TODO: abstract the above proof in terms of Leibniz calculus?
+}

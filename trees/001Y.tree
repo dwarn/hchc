@@ -1,0 +1,26 @@
+\author{dwarn}
+\date{2025-06-14}
+\import{base-macros}
+\taxon{Definition}
+\title{Left and right fibrations}
+\p{
+	A functor #{p : E \to B} is said to be a left (resp. right) fibration if
+	it is [right orthogonal](0020) to the left (resp. right) endpoint inclusion
+	#{1 \to \II}.
+}
+\p{
+	Explicitly, this means that #{p : E \to B} is a left fibration if
+	the map
+##{\map(\II, E) \to \map(\II, B) \times_B E}
+	is an equivalence, where the maps #{\map(\II,E) \to E} and
+#{\map(\II,B) \to B} select the domain of a morphism.
+}
+\p{
+	Equivalently, #{p : E \to B} is a left fibration if 
+	for any objects #{e_0 : E}, #{b_1 : B} with a morphism
+	#{f : B(p(e_0),b_1)}, the type
+	##{(e_1 : E) \times (h : p(e_1) \cong b_1) 
+		\times (g : E(e_0,e_1)) \times (f = h \circ p(g))}
+	of lifts of #{f} with left endpoint #{e_0},
+	   is contractible.
+}

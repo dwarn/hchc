@@ -1,0 +1,18 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Remark}
+\import{base-macros}
+\title{\Cat models simply typed lambda calculus}
+\p{
+	Since \Cat has [finite products](000Z) and [exponential objects](0011),
+	it is a Cartesian closed category, and so models simply typed lambda calculus,
+	with all that it entails.
+}
+\p{
+	For example we have an evident equivalence #{\ob(\Fun(A,B)) \simeq \map(A,B)}
+	for all #{A\, B : \Cat}.
+	Given an object #{f : \ob(\Fun(A,B))}, the corresponding functor
+	#{A \to B} is the composite
+	#{A \xrightarrow{(f \circ !, \id_A)} \Fun(A,B) \times A
+		\xrightarrow{\ev} B}.
+}

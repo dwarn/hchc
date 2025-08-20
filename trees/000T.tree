@@ -1,0 +1,10 @@
+\author{dwarn}
+\date{2025-06-11}
+\taxon{Axiom}
+\title{The terminal category}
+\import{base-macros}
+\p{
+	We postulate the existence of a \em{terminal category},
+	i.e. a category #{1 : \Cat} such that for all categories #{C : \Cat},
+	the type of functors #{\map(C,1)} is contractible.
+}

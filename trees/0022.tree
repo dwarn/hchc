@@ -1,0 +1,9 @@
+\author{dwarn}
+\date{2025-06-14}
+\taxon{Definition}
+\title{Cofinal functors}
+\import{base-macros}
+\p{
+	A functor is said to be \em{left cofinal} (resp. \em{right} cofinal)
+	if it is left orthogonal against every [left fibration](001Y) (resp. right fibration).
+}

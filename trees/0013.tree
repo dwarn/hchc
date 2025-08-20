@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Definition}
+\title{The action of a functor on objects}
+\import{base-macros}
+\p{
+	Given categories #{A\,B : \Cat}	
+	and a functor #{f : A \to B}, we have
+    an induced map on [objects](000V)
+	#{\ob(f) : \ob(A) \to \ob(B)} which is simply
+	post-composition with #{f}.
+}

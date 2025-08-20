@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\title{The action of a functor on morphisms}
+\import{base-macros}
+\p{
+	Given categories #{A\, B : \Cat}, a functor
+	#{f : A \to B}, and objects
+	#{a_0\, a_1 : \ob(A)}, we have an \em{action of #{f} on morphisms}
+	##{A(a_0, a_1) \to B(f(a_0), f(a_1))}
+	given by postcomposing functors #{\II \to A} with #{f}.
+}

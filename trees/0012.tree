@@ -1,0 +1,20 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Axiom}
+\import{base-macros}
+\title{Functors into \II}
+\p{
+	For a category #{C : \Cat}, the [action of a functor on objects](0013)
+	together with the enumeration of the [objects of \II](000U)
+	induces a map
+	##{\map(C,\II) \to \{0,1\}^{\ob(C)}.}
+	We postulate that the above map is an embedding whose image consists
+	of those functions #{p : \ob(C) \to \{0,1\}} with the property that
+	#{p} is \em{monotone}, in the sense that
+	for all [morphisms](000X) #{f : \II \to C} in #{C}, we have
+	#{p(\dom(f)) \le p(\cod(f))} in #{\{0,1\}}.
+}
+\p{
+	In other words, we postulate that #{\II} is the cofree category of the poset
+	#{\{0,1\}}.
+}

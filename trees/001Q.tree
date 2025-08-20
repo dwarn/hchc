@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Axiom}
+\import{base-macros}
+\title{The Rezk axiom: categories are univalent}
+\p{
+	We postulate that for any category #{C : \Cat}, the map
+	of types 
+	##{\ob(C) \to \map(\II,C)}
+	that selects [identity morphisms](001C),
+	is an embedding whose image contains all [invertible](001R) morphisms of #{C}.
+}

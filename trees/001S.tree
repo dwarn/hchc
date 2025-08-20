@@ -1,0 +1,13 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Lemma}
+\title{Fully faithful functors reflect isomorphisms}
+\import{base-macros}
+\p{
+	Let #{A\, B : \Cat} be categories and let #{F : A \to B} be a [fully faithful](0010) functor.
+	Let #{x\,y : \ob(A)} be objects and #{f : A(x,y)} a morphism.
+	If #{F(f) : B(f(x), f(y))} is [invertible](001R) then so is #{f}.
+}
+\proof{
+	Immediate by either of the latter two [characterisations of invertibility](001R).
+}

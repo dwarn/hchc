@@ -1,0 +1,12 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Definition}
+\title{Fully faithful functors}
+\import{base-macros}
+\p{
+	Given categories #{A\,B : \Cat} and a functor #{f : A \to B}, we
+    say that #{f} is \em{fully faithful} if for all #{a_0\,a_1 : \ob(A)},
+    its action on morphisms
+	##{A(a_0,a_1) \to B(f(a_0),f(a_1))}
+	is an equivalence of types.
+}

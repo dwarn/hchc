@@ -1,0 +1,20 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Axiom}
+\import{base-macros}
+\title{The segal axiom}
+\p{
+	[The square](0017) shown below is a pushout square in #{\Cat}.
+}
+\p{
+	\tikzcd{
+		% https://q.uiver.app/#q=WzAsNCxbMCwwLCIxIl0sWzEsMCwiXFxJSSJdLFsxLDEsIlxcRGVsdGFeMiJdLFswLDEsIlxcSUkiXSxbMCwxLCIwIl0sWzEsMiwiMTIiXSxbMCwzLCIxIiwyXSxbMywyLCIwMSIsMl0sWzIsMCwiIiwxLHsic3R5bGUiOnsibmFtZSI6ImNvcm5lciJ9fV1d
+	1 & \II \\
+	\II & {\Delta^2}
+	\arrow["0", from=1-1, to=1-2]
+	\arrow["1"', from=1-1, to=2-1]
+	\arrow["12", from=1-2, to=2-2]
+	\arrow["01"', from=2-1, to=2-2]
+	\arrow["\lrcorner"{anchor=center, pos=0.125, rotate=180}, draw=none, from=2-2, to=1-1]
+	}
+}

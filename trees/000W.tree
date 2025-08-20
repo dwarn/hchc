@@ -1,0 +1,28 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Remark}
+\title{There is only one possible interval}
+\import{base-macros}
+\p{
+	Every automorphism of \Cat fixes \II.
+	Thus in the [wild category \Cat](000Q) there is only one object
+ 	that can function as an [interval](000U).
+}
+\p{
+	To see this, one can argue as follows.
+	Suppose we are given an automorphism #{\sigma} of \Cat that sends \II
+	to some category #{J : \Cat}.
+	The automorphism #{\sigma} necessarily fixes the terminal category #{1}
+	and so the enumeration #{\ob(\II) \simeq \{0,1\}}
+	induces an enumeration #{\ob(J) \simeq \{0,1\}} of the objects of #{J}.
+	One can then prove that the \em{mapping spaces} of #{J} are propositions
+	(this is not \em{entirely} direct, since mapping spaces are defined in terms
+	 of functors out of \II, and we do not yet know that #{\sigma}
+	 fixes \II).
+	One can show that the propositions #{J(0,1)} and #{J(1,0)} cannot both
+	be true.
+    It is a non-trivial exercise to show that the proposition
+	#{J(0,1) \sqcup J(1,0)} is true (note that this is harder than showing
+    it is not false!).
+	From this we can build a functor #{\II \to J} which is easily seen to be an equivalence.
+}

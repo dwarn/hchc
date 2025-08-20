@@ -1,0 +1,14 @@
+\author{dwarn}
+\date{2025-06-12}
+\taxon{Definition}
+\import{base-macros}
+\title{The category #{\Delta^n}}
+\p{
+	We define by induction on #{n : \N} a category
+	#{\Delta^n : \Cat}, as follows.
+	We take ##{\Delta^0 \coloneqq 1} to be the
+	[terminal category](000T),
+    and ##{\Delta^{n+1} \coloneqq \Fun(\Delta^n, \II)}
+	to be the [category of functors](0011)
+	from #{\Delta^n} to the [interval #{\II}](000U).
+}

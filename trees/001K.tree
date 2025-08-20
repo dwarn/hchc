@@ -1,0 +1,17 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Definition}
+\import{base-macros}
+\title{The composition functor and whiskering}
+\p{
+	Given categories #{A\, B\, C: \Cat}, the operation of
+	functor composition
+	##{\map(A,B) \times \map(B,C) \to \map(A,C)}
+	is captured by a \em{functor} between functor categories
+	##{\Fun(A,B) \times \Fun(B,C) \to \Fun(A,C),}
+	[as is the case in any cartesian closed category](0015).
+	The action of the above functor on objects is called
+	\em{whiskering}, or horizontal composition of natural transformations.
+	The fact that the above functor respects composition gives
+	an \em{exchange law}.
+}

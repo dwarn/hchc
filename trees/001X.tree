@@ -1,0 +1,43 @@
+\author{dwarn}
+\date{2025-06-14}
+\taxon{Lemma}
+\import{base-macros}
+\title{The full subcategory spanned by isomorphisms}
+\p{
+	Let #{C : \Cat} be a category. Then the functor
+##{C \to \Fun(\II, C),}
+	which is transpose to #{\pi_1 : C \times \II \to C},
+	is [fully faithful](001O) and its image consists precisely of
+	[invertible](001R) morphisms in #{C}.
+}
+\proof{
+\p{
+	The fact that the action on objects is an embedding with image as specified
+	is the content of [the Rezk axiom](001Q).
+	It remains to prove that #{C \to \Fun(\II,C)} is fully faithful
+	(which has nothing to do with the Rezk axiom).
+}
+\p{
+	Let #{x\,y : C} be objects of #{C}. Then the action on morphisms
+	##{C(x,y) \to C^\II(\id_x, \id_y)}
+	corresponds, under [the characterisation of morphisms in #{C^\II}](0019),
+	to the map
+##{C(x,y) \to 
+		\left( 
+			(s\, t : C(x,y)) \times
+			\id_y \circ s = t \circ \id_x
+		\right)}
+	which sends #{f} to the data of #{f}, #{f}, and the composite of unit laws
+	witnessing #{\id_y \circ f = f \circ \id_x}.
+	We need only to observe that either of the projections
+	from the latter type displayed above down to #{C(x,y)}
+	is an equivalence, since #{\id_y \circ s = t \circ \id_x}
+	is equivalent to #{s = t},
+	and that the map displayed above is a section to this (invertible) projection.
+}
+\p{
+	TODO: a better way to organise this proof is to first prove that
+	#{C \to \Fun(\II,C)} is left (right) adjoint to #{\dom} (#{\cod})
+	with invertible unit (counit).
+}
+}

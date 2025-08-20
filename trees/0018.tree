@@ -1,0 +1,23 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Lemma}
+\title{Isomorphisms are closed under retracts}
+\import{base-macros}
+\p{
+Let #{A, B_0, B_1} be objects of some wild category.
+Let #{s_i : B_i \to A}, #{r_i : A \to B_i} be morphisms 
+with paths #{r_i \circ s_i = \id_{B_i}} (#{i = 0,1}).
+Suppose #{f : B_0 \to B_1} is a morphism with
+#{s_1 \circ f =_{B_0 \to A} s_0} and
+#{f \circ r_0 =_{A \to B_1} r_1}.
+Then #{f : B_0 \to B_1} is invertible.
+}
+\proof{
+We claim that #{g \coloneqq r_0 \circ s_1} is a two-sided inverse to #{f}.
+Indeed we have
+##{f \circ g = (f \circ r_0) \circ s_1
+	= r_1 \circ s_1 = \id_{B_1}}
+and
+##{g \circ f = r_0 \circ (s_1 \circ f) 
+	= r_0 \circ s_0 = \id_{B_0}.}
+}

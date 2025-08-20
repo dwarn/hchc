@@ -1,0 +1,21 @@
+\author{dwarn}
+\date{2025-06-13}
+\taxon{Construction}
+\title{The components of a natural transformation}
+\import{base-macros}
+\p{
+	Given categories #{A\, B : \Cat}, functors #{f\, g : A \to B}
+	a natural transformation #{\eta : f \to g},
+	and an object #{a : \ob(A)}, we have a morphism
+	#{\eta_a : B(f(a), g(a))}.
+}
+\p{
+	Indeed this is simply the action on morphisms of the composite functor
+	##{\Fun(A,B) \xrightarrow{(\id_{\Fun(A,B)}, a)} \Fun(A,B) \times A \xrightarrow{\ev} B.}
+}
+\p{
+	(It is an easy exercise to check that the [action on objects](0013) of the above functor
+	 agrees with the action on #{a} of functors #{A \to B} under the
+	 [correspondence](0015) between functors #{A \to B} and objects
+	 of #{\Fun(A,B)}.)
+}

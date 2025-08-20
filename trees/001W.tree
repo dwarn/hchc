@@ -1,0 +1,23 @@
+\author{dwarn}
+\date{2025-06-14}
+\import{base-macros}
+\taxon{Lemma}
+\title{Invertibility of natural transformations is deteced objectwise}
+\p{
+	Let #{A\,B : \Cat} be categories, #{F, G : A \to B} functors,
+	and #{\eta : F \to G} a [natural transformation](001H).
+	Suppose that for all objects #{a : \ob(A)},
+	the [component](001I) #{\eta_a : B(F(a), G(a))} is [invertible](001R).
+	Then #{eta} itself is invertible.
+}
+\proof{
+	The natural transformation #{\eta} corresponds, by flipping, to
+	a functor
+##{A \to \Fun(\II, B).}
+	The fact that #{\eta} is componentwise invertible
+	[means](001U) that it factors through
+	the [full subcategory](001X)
+	#{B \to \Fun(\II,B)}.
+	Thus #{\eta} corresponds to the identity morphism	
+	on a functor #{A \to B}, and so #{\eta} is invertible.
+}
