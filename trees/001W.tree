@@ -8,7 +8,7 @@
 	and #{\eta : F \to G} a [natural transformation](001H).
 	Suppose that for all objects #{a : \ob(A)},
 	the [component](001I) #{\eta_a : B(F(a), G(a))} is [invertible](001R).
-	Then #{eta} itself is invertible.
+	Then #{\eta} itself is invertible.
 }
 \proof{
 	The natural transformation #{\eta} corresponds, by flipping, to

@@ -1,10 +1,16 @@
 \title{Higher-categorical headcanon}
 
 \p{
-A collection of notes on the foundations of #{(\infty,1)}-category theory set up on top of HoTT.
-These notes are not meant to be pedagogical or formalisation-ready.
-They are mostly self-contained but we assume familiarity with HoTT and the theory of wild categories therein.
-While the proofs are not complete, there should not be any big gaps, and we hope not to be missing any axioms.
+
+A collection of notes on the foundations of #{(\infty,1)}-category theory set
+up on top of HoTT. Based on 
+Cisinski, Cnossen, Nguyen, and Walde's [Formalization of Higher Categories](https://sites.google.com/view/bastiaan-cnossen),
+	as well as Haugseng's [Yet another introduction to #{\infty}-categories](https://runegha.folk.ntnu.no/naivecat_web.pdf).
+These notes are not meant to be pedagogical or
+formalisation-ready. They are mostly self-contained but we assume
+familiarity with HoTT and the theory of wild categories therein. While the
+proofs are not complete, there should not be any big gaps, and the idea is
+that every claim should follow from the axioms listed.
 }
 
 \transclude{000Q}
